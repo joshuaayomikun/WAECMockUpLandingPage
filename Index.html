@@ -52,6 +52,10 @@
     margin: 1em auto;
     }
 
+    .card-text {
+      text-align: center;
+    }
+
     @media (max-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5em;
@@ -91,7 +95,7 @@
 <body data-gr-c-s-loaded="true">
   <main role="main">
 
-    <section class="jumbotron bg-white" style="" >
+    <section class="jumbotron bg-white mb-0" style="" >
       <div class="container">
         <div class="header-body-wrap mx-auto">
           <span><img src="assets/image/WAEC.png" height="70" width="70" />
@@ -108,7 +112,7 @@
       </div>
     </section>
 
-    <div class="album py-5">
+    <div class="album">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-4">
@@ -185,16 +189,21 @@
 
   </main>
 
-  <footer class="text-muted">
+  <section class="footer pt-0 mt-auto bg-dark">
     <div class="container">
-      <p class="float-right">
-        <a href="#">Back to top</a>
-      </p>
-      <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
-      <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a
-          href="/docs/4.4/getting-started/introduction/">getting started guide</a>.</p>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center footer-alt my-1">
+                    <p class="f-15">
+                        <a href="https://sidmach.com/" class="text-white" target="_blank">
+                            © 2020 - Sidmach Technologies
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
+</section>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
