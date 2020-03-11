@@ -25,14 +25,22 @@
 
 
   <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+    body{
+      background: rgb(74,77,153);
+background: -moz-linear-gradient(319deg, rgba(74,77,153,1) 10%, rgba(224,222,55,1) 47%, rgba(74,77,153,1) 79%);
+background: -webkit-linear-gradient(319deg, rgba(74,77,153,1) 10%, rgba(224,222,55,1) 47%, rgba(74,77,153,1) 79%);
+background: linear-gradient(319deg, rgba(74,77,153,1) 10%, rgba(224,222,55,1) 47%, rgba(74,77,153,1) 79%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a4d99",endColorstr="#4a4d99",GradientType=1);
     }
+
+    main{
+      padding-top: 5em;
+    }
+    
+  .carousel-item {
+    height: 5em;
+    padding-bottom: 0;
+  }
 
     .image-holder {
       height: 156.86px;
@@ -87,28 +95,48 @@
       }
     }
   </style>
-<body class="" style="background-color: #7ab5f1!important;">
+<body class="">
+      <!-- Fixed navbar -->
+      <nav class="navbar fixed-top navbar-white bg-white">
+        <a class="navbar-brand mx-auto" href="#"><span><img src="assets/image/WAEC.png" height="70" width="70">
+          <span class="header-title h3 text-muted">THE WEST AFRICAN EXAMINATIONS COUNCIL</span></span></a>
+      </nav>
   <main role="main">
 
-    <section class="jumbotron bg-white mb-0" style="" data-aos="fade-up">
+    <section class="jumbotron bg-white mb-0 pb-1 pt-3" style="" data-aos="fade-up">
       <div class="container">
         <div class="header-body-wrap mx-auto" data-aos="fade-up">
-          <span><img src="assets/image/WAEC.png" height="70" width="70">
-          <span class="header-title h3 text-muted">THE WEST AFRICAN EXAMINATIONS COUNCIL</span></span>
           <h5 class="header-introduction text-muted">
             Welcome to West African Examinations Council (WAEC) e-Registration Website.</h5>
-
-          <p class="lead text-muted header-body">
-            WAEC Registers Candidates for Schools and Private Examinations.
-            The School Examination is WASSCE (for School Candidates) while the Private Candidates Examination is WASSCE
-            (for Private Candidates).
-          </p>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-caption d-none d-md-block h-100">
+                    <p class="lead text-muted header-body m-0">WAEC Registers Candidates for Schools and Private Examinations.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-caption d-none d-md-block h-100">
+                    <p class="lead text-muted header-body m-0">The School Examination is WASSCE (for School Candidates) while the Private Candidates Examination is WASSCE
+                      (for Private Candidates).</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-caption d-none d-md-block h-100">
+                    <p class="lead text-danger header-body m-0">Please Note that WAEC would not entertain any request for amendment of date of birth after Results had been released.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
-    </section>
-<img src="assets/image/hero-7-shape-light.png" alt="" class="img-fluid shape-light mx-auto" style="
+      <div class="position-absolute " style="right: 0; left: 0;">
+        <div class="whitespace bg-white p-5 whitespace"></div>
+      <img src="assets/image/hero-7-shape-light.png" alt="" class="img-fluid shape-light mx-auto" style="
     transform: rotate(180deg);
-">
+"></div>
+    </section>
+
 
     <div class="album">
       <div class="container">
@@ -201,10 +229,15 @@
         </div>
     </div>
 </section>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
     AOS.init();
+//     $('.carousel').carousel({
+//   interval: 2000
+// })
   </script>
 </body></html>
