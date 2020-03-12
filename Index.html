@@ -27,25 +27,25 @@
   <style>
     /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 html {
-  height: 100vh;
+  /* height: 100vh; */
 }
-/* body {
-      height: 100%;
-    } */
+body {
+  background: rgb(74,77,153);
+background: -o-linear-gradient(131deg, rgba(74,77,153,1) 10%, rgba(224,222,55,1) 47%, rgba(74,77,153,1) 79%);
+background: linear-gradient(319deg, rgba(74,77,153,1) 10%, rgba(224,222,55,1) 47%, rgba(74,77,153,1) 79%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a4d99",endColorstr="#4a4d99",GradientType=1);
+    }
 
     main{
-      height: 100%;
-      display: -webkit-box;
+      /* height: 100%; */
+      /* display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column;
-      background: rgb(74,77,153);
-background: -o-linear-gradient(131deg, rgba(74,77,153,1) 10%, rgba(224,222,55,1) 47%, rgba(74,77,153,1) 79%);
-background: linear-gradient(319deg, rgba(74,77,153,1) 10%, rgba(224,222,55,1) 47%, rgba(74,77,153,1) 79%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a4d99",endColorstr="#4a4d99",GradientType=1);
+              flex-direction: column; */
+      
     }
     .jumbotron {
       padding-top: 6em;
@@ -86,6 +86,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a4d99",endCo
     /* @media (min-width: ;) {
       
     } */
+    @media (min-width: 1440px){
+body {
+  height: 100%;
+}
+    }
     @media (max-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5em;
@@ -118,14 +123,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a4d99",endCo
       }
     }
   </style>
-<body>
+<body class="d-lg-flex flex-column">
       <!-- Fixed navbar -->
-      
+  <header><nav class="navbar fixed-top navbar-white bg-white">
+    <a class="navbar-brand mx-auto" href="#"><span class="d-flex align-items-center justify-content-center text-wrap"><img src="assets/image/WAEC.png" height="70" width="70">
+      <span class="header-title h3 text-muted">THE WEST AFRICAN EXAMINATIONS COUNCIL</span></span></a>
+  </nav></header>
   <main role="main">
-    <nav class="navbar fixed-top navbar-white bg-white">
-      <a class="navbar-brand mx-auto" href="#"><span class="d-flex align-items-center justify-content-center text-wrap"><img src="assets/image/WAEC.png" height="70" width="70">
-        <span class="header-title h3 text-muted">THE WEST AFRICAN EXAMINATIONS COUNCIL</span></span></a>
-    </nav>
+    
     <section class="jumbotron bg-white mb-0 pb-1" data-aos="fade-up">
       <div class="container">
         <div class="header-body-wrap mx-auto" data-aos="fade-up">
@@ -228,22 +233,23 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a4d99",endCo
         </div>
       </div>
     </div>
-    <section class="footer pt-0 mt-auto bg-dark">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="text-center footer-alt my-1">
-                      <p class="f-15">
-                          <a href="https://sidmach.com/" class="text-white" target="_blank">
-                              © 2020 - Sidmach Technologies
-                          </a>
-                      </p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+    
   </main>
+  <footer class="footer pt-0 mt-auto bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center footer-alt my-1">
+                    <p class="f-15">
+                        <a href="https://sidmach.com/" class="text-white" target="_blank">
+                            © 2020 - Sidmach Technologies
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
